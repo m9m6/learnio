@@ -1,0 +1,86 @@
+import 'package:flutter/material.dart';
+import '../../reusable_widgets/custom_auth_textformfield.dart';
+import '../../utils/app_assets.dart';
+import '../login/login.dart';
+
+class SignUpScreen extends StatelessWidget {
+  static const String routeName = '/SignUp';
+  const SignUpScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    final nameController = TextEditingController();
+    final emailController = TextEditingController();
+    final passwordController = TextEditingController();
+
+    return Scaffold(
+      backgroundColor: Colors.white,
+      appBar: AppBar(
+        title: const Text('Sign Up'),
+        backgroundColor: Colors.white,
+        elevation: 0,
+        centerTitle: true,
+        foregroundColor: Colors.black,
+      ),
+      body: SingleChildScrollView(
+        padding: const EdgeInsets.all(24),
+        child: Column(
+          children: [
+            Image.asset(AppAssets.signUp, height: 200),
+            const SizedBox(height: 40),
+            AuthTextFormField(label: 'Full Name', controller: nameController),
+            AuthTextFormField(label: 'Email', controller: emailController),
+            AuthTextFormField(
+              label: 'Password',
+              controller: passwordController,
+              isPassword: true,
+            ),
+            const SizedBox(height: 10),
+            ElevatedButton(
+              onPressed: () {},
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.black,
+                foregroundColor: Colors.white,
+                minimumSize: const Size(double.infinity, 50),
+              ),
+              child: const Text('Sign Up'),
+            ),
+            const SizedBox(height: 16),
+            OutlinedButton.icon(
+              onPressed: () {},
+              icon: Image.network(
+                'https://upload.wikimedia.org/wikipedia/commons/4/4e/Google_%22G%22_Logo.svg',
+                height: 24,
+              ),
+              label: const Text('Sign up with Google'),
+              style: OutlinedButton.styleFrom(
+                minimumSize: const Size(double.infinity, 50),
+              ),
+            ),
+            const SizedBox(height: 24),
+            GestureDetector(
+              onTap: () {
+                Navigator.pushNamed(context, LoginScreen.routeName);
+              },
+              child: const Text.rich(
+                TextSpan(
+                  text: "Already have an account? ",
+                  style: TextStyle(color: Colors.black87),
+                  children: [
+                    TextSpan(
+                      text: 'Login',
+                      style: TextStyle(
+                        color: Colors.blue,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
