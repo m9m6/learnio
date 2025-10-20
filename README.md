@@ -1,27 +1,45 @@
-#lernio – Online Learning App
+Learnio – Online Learning App
 
-Lernio is a Flutter-based app for online learning and course management.
-It allows admins to create and manage courses, and learners to enroll, study, and track their progress easily.
+Learnio is a Flutter-based mobile application designed for online learning and course progress management.  
+It provides an interactive platform where learners can enroll in courses, study through structured modules, and track their academic progress. Administrators can create, edit, and manage courses, monitor performance, and deliver timely feedback — all within a unified environment.
 
-🚀 Main Features
-🔐 Secure login for learners and admins
-🎓 Add, edit, and manage courses
-🎥 Access video lessons and materials
-📈 Track learner progress
-🔔 Receive course updates and feedback
+---
 
-🧩 Tech Stack
-Framework: Flutter
-Language: Dart
-Version Control: Git & GitHub
+ 🚀 Main Features
+- 🔐 **Secure Login:** Role-based access for learners and admins  
+- 🎓 **Course Management:** Add, edit, and organize courses with ease  
+- 🎥 **Interactive Learning:** Access video lessons, documents, and other learning materials  
+- 📈 **Progress Tracking:** View learner performance through analytics and milestones  
+- 🔔 **Notifications & Feedback:** Real-time updates, reminders, and instructor feedback  
+
+---
+
+ 🧩 Tech Stack
+- Framework: Flutter
+- Mockups and designing: Figma 
+- Language: Dart   
+- Version Control: Git and GitHub  
 
 
-📁 Project Structure
-lib/      → Flutter source code  
-assets/   → Images and icons  
-test/     → Unit and widget tests
+🧠 Core UX Focus
 
+Learnio is built with a learner-first approach:
+- Simple, supportive, and motivational tone throughout the app  
+- Clear navigation and intuitive dashboards for easy tracking  
+- Engaging learning experience with feedback and progress visibility  
+- Inclusive and accessible design for all users  
 
+---
 
 📅 Version
-Version: 1.0 – Week 1 Deliverable
+Version: 1.0  
+Deliverable: Week 1 Build – Core Learning Module and Dashboard  
+
+---
+
+💡 Future Enhancements
+- AI-based personalized learning recommendations  
+- Community discussion boards  
+- In-app quizzes and certification modules  
+- Enhanced analytics for administrators  
+
