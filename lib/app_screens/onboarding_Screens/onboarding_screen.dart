@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learnio/app_screens/login/login.dart';
 import 'package:learnio/app_screens/sign_up/signup.dart';
 
 import '../../reusable_widgets/custom_elevated_button.dart';
@@ -28,7 +29,7 @@ class _OnBoardingScreenState extends State<OnboardingScreen> {
     } else {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => const SignUpScreen()),
+        MaterialPageRoute(builder: (context) => const LoginScreen()),
       );
     }
   }

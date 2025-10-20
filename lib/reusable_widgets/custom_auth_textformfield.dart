@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class AuthTextFormField extends StatelessWidget {
+class AuthTextFormField extends StatefulWidget {
   final String label;
   final bool isPassword;
   final TextEditingController? controller;
@@ -15,60 +15,55 @@ class AuthTextFormField extends StatelessWidget {
   });
 
   @override
-  Widget build(BuildContext context) {
-    bool obscure = isPassword;
+  State<AuthTextFormField> createState() => _AuthTextFormFieldState();
+}
 
-    return StatefulBuilder(
-      builder: (context, setState) {
-        return Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              label,
-              style: const TextStyle(
-                fontSize: 16,
-                color: Colors.black87,
-                fontWeight: FontWeight.w600,
-              ),
-            ),
-            const SizedBox(height: 6),
-            TextFormField(
-              controller: controller,
-              keyboardType: keyboardType,
-              obscureText: obscure,
-              decoration: InputDecoration(
-                hintText: label,
-                hintStyle: const TextStyle(color: Colors.black38),
-                contentPadding:
-                const EdgeInsets.symmetric(horizontal: 14, vertical: 14),
-                enabledBorder: OutlineInputBorder(
-                  borderSide:
-                  const BorderSide(width: 1.5, color: Colors.black54),
-                  borderRadius: BorderRadius.circular(6),
-                ),
-                focusedBorder: OutlineInputBorder(
-                  borderSide:
-                  const BorderSide(width: 2, color: Colors.black),
-                  borderRadius: BorderRadius.circular(6),
-                ),
-                suffixIcon: isPassword
-                    ? IconButton(
-                  onPressed: () =>
-                      setState(() => obscure = !obscure),
-                  icon: Icon(
-                    obscure
-                        ? Icons.visibility_off
-                        : Icons.visibility,
-                    color: Colors.grey,
-                  ),
-                )
-                    : null,
-              ),
-            ),
-            const SizedBox(height: 20),
-          ],
-        );
-      },
+class _AuthTextFormFieldState extends State<AuthTextFormField> {
+  bool _obscureText = true;
+
+  @override
+  Widget build(BuildContext context) {
+    return TextFormField(
+      controller: widget.controller,
+      keyboardType: widget.keyboardType,
+      obscureText: widget.isPassword ? _obscureText : false,
+      decoration: InputDecoration(
+        hintText: widget.label,
+        labelText: widget.label,
+        hintStyle: const TextStyle(color: Colors.black38),
+        labelStyle: const TextStyle(
+          fontSize: 16,
+          color: Colors.black87,
+          fontWeight: FontWeight.w600,
+        ),
+        contentPadding:
+        const EdgeInsets.symmetric(horizontal: 14, vertical: 14),
+        enabledBorder: OutlineInputBorder(
+          borderSide:
+          const BorderSide(width: 1.5, color: Colors.black54),
+          borderRadius: BorderRadius.circular(6),
+        ),
+        focusedBorder: OutlineInputBorder(
+          borderSide:
+          const BorderSide(width: 2, color: Colors.black),
+          borderRadius: BorderRadius.circular(6),
+        ),
+        suffixIcon: widget.isPassword
+            ? IconButton(
+          onPressed: () {
+            setState(() {
+              _obscureText = !_obscureText;
+            });
+          },
+          icon: Icon(
+            _obscureText
+                ? Icons.visibility_off
+                : Icons.visibility,
+            color: Colors.grey,
+          ),
+        )
+            : null,
+      ),
     );
   }
 }
