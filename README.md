@@ -110,37 +110,52 @@ Notes:
 
 Screenshots
 
-The following screenshots were added to `assets/images/`. Use these for the README or documentation screenshots.
+The following gallery shows UI screenshots (thumbnails link to full-size images). Images are placed in rows of three for a cleaner layout.
 
-- Home / Dashboard
-
-  <a href="assets/images/Screenshot_20251027-204451.png"><img src="assets/images/Screenshot_20251027-204451.png" alt="Home - 204451" width="320"/></a>
-
-- Home (alternate) / Dashboard
-
-  <a href="assets/images/Screenshot_20251027-204501.png"><img src="assets/images/Screenshot_20251027-204501.png" alt="Home - 204501" width="320"/></a>
-
-- Course list / Categories
-
-  <a href="assets/images/Screenshot_20251027-205822.png"><img src="assets/images/Screenshot_20251027-205822.png" alt="Courses - 205822" width="320"/></a>
-
-- Course detail / Player
-
-  <a href="assets/images/Screenshot_20251027-205825.png"><img src="assets/images/Screenshot_20251027-205825.png" alt="Course Detail - 205825" width="320"/></a>
-
-- Profile / Settings
-
-  <a href="assets/images/Screenshot_20251027-205832.png"><img src="assets/images/Screenshot_20251027-205832.png" alt="Profile - 205832" width="320"/></a>
-
-- Gallery / Onboarding or Screenshots gallery
-
-  <a href="assets/images/Screenshot_20251027-210101_Gallery.png"><img src="assets/images/Screenshot_20251027-210101_Gallery.png" alt="Gallery - 210101" width="320"/></a>
-
-- Additional screen
-
-  <a href="assets/images/Screenshot_20251027-212258.png"><img src="assets/images/Screenshot_20251027-212258.png" alt="Extra - 212258" width="320"/></a>
-
-(Other UI assets are in `assets/images/` such as `login.png`, `sign_up.png`, `onb1.png`, `onb2.png`, `onb3.png`, and `profile.png`.)
+<table>
+  <tr>
+    <td align="center">
+      <a href="assets/images/Screenshot_20251027-204451.png"><img src="assets/images/Screenshot_20251027-204451.png" alt="Home - 204451" width="300"/></a>
+      <div style="font-size:0.9em; margin-top:6px">Home / Dashboard</div>
+    </td>
+    <td align="center">
+      <a href="assets/images/Screenshot_20251027-204501.png"><img src="assets/images/Screenshot_20251027-204501.png" alt="Home alt - 204501" width="300"/></a>
+      <div style="font-size:0.9em; margin-top:6px">Home (alternate)</div>
+    </td>
+    <td align="center">
+      <a href="assets/images/Screenshot_20251027-205822.png"><img src="assets/images/Screenshot_20251027-205822.png" alt="Courses - 205822" width="300"/></a>
+      <div style="font-size:0.9em; margin-top:6px">Course list / Categories</div>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="assets/images/Screenshot_20251027-205825.png"><img src="assets/images/Screenshot_20251027-205825.png" alt="Course Detail - 205825" width="300"/></a>
+      <div style="font-size:0.9em; margin-top:6px">Course detail / Player</div>
+    </td>
+    <td align="center">
+      <a href="assets/images/Screenshot_20251027-205832.png"><img src="assets/images/Screenshot_20251027-205832.png" alt="Profile - 205832" width="300"/></a>
+      <div style="font-size:0.9em; margin-top:6px">Profile / Settings</div>
+    </td>
+    <td align="center">
+      <a href="assets/images/Screenshot_20251027-210101_Gallery.png"><img src="assets/images/Screenshot_20251027-210101_Gallery.png" alt="Gallery - 210101" width="300"/></a>
+      <div style="font-size:0.9em; margin-top:6px">Gallery / Onboarding</div>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="assets/images/Screenshot_20251027-212258.png"><img src="assets/images/Screenshot_20251027-212258.png" alt="Extra - 212258" width="300"/></a>
+      <div style="font-size:0.9em; margin-top:6px">Additional screen</div>
+    </td>
+    <td align="center">
+      <a href="assets/images/login.png"><img src="assets/images/login.png" alt="Login" width="300"/></a>
+      <div style="font-size:0.9em; margin-top:6px">Login screen</div>
+    </td>
+    <td align="center">
+      <a href="assets/images/sign_up.png"><img src="assets/images/sign_up.png" alt="Sign Up" width="300"/></a>
+      <div style="font-size:0.9em; margin-top:6px">Sign Up screen</div>
+    </td>
+  </tr>
+</table>
 
 ---
 
