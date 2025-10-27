@@ -114,31 +114,31 @@ The following screenshots were added to `assets/images/`. Use these for the READ
 
 - Home / Dashboard
 
-  ![Home - 204451](assets/images/Screenshot_20251027-204451.png)
+  <a href="assets/images/Screenshot_20251027-204451.png"><img src="assets/images/Screenshot_20251027-204451.png" alt="Home - 204451" width="320"/></a>
 
 - Home (alternate) / Dashboard
 
-  ![Home - 204501](assets/images/Screenshot_20251027-204501.png)
+  <a href="assets/images/Screenshot_20251027-204501.png"><img src="assets/images/Screenshot_20251027-204501.png" alt="Home - 204501" width="320"/></a>
 
 - Course list / Categories
 
-  ![Courses - 205822](assets/images/Screenshot_20251027-205822.png)
+  <a href="assets/images/Screenshot_20251027-205822.png"><img src="assets/images/Screenshot_20251027-205822.png" alt="Courses - 205822" width="320"/></a>
 
 - Course detail / Player
 
-  ![Course Detail - 205825](assets/images/Screenshot_20251027-205825.png)
+  <a href="assets/images/Screenshot_20251027-205825.png"><img src="assets/images/Screenshot_20251027-205825.png" alt="Course Detail - 205825" width="320"/></a>
 
 - Profile / Settings
 
-  ![Profile - 205832](assets/images/Screenshot_20251027-205832.png)
+  <a href="assets/images/Screenshot_20251027-205832.png"><img src="assets/images/Screenshot_20251027-205832.png" alt="Profile - 205832" width="320"/></a>
 
 - Gallery / Onboarding or Screenshots gallery
 
-  ![Gallery - 210101](assets/images/Screenshot_20251027-210101_Gallery.png)
+  <a href="assets/images/Screenshot_20251027-210101_Gallery.png"><img src="assets/images/Screenshot_20251027-210101_Gallery.png" alt="Gallery - 210101" width="320"/></a>
 
 - Additional screen
 
-  ![Extra - 212258](assets/images/Screenshot_20251027-212258.png)
+  <a href="assets/images/Screenshot_20251027-212258.png"><img src="assets/images/Screenshot_20251027-212258.png" alt="Extra - 212258" width="320"/></a>
 
 (Other UI assets are in `assets/images/` such as `login.png`, `sign_up.png`, `onb1.png`, `onb2.png`, `onb3.png`, and `profile.png`.)
 
@@ -157,4 +157,3 @@ Credits
 
 - Built with Flutter and Dart
 - Design inspiration: Figma
-
