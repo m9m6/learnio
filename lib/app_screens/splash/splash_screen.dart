@@ -32,7 +32,7 @@ class _SplashScreenState extends State<SplashScreen>
     _controller.forward();
 
     //navigation to next screen after 20 sec
-    Timer(const Duration(seconds: 20), () {
+    Timer(const Duration(seconds: 10), () {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (context) => const OnboardingScreen()),

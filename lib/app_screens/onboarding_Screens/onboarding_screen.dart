@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:learnio/app_screens/login/login.dart';
-import 'package:learnio/app_screens/sign_up/signup.dart';
+// import 'package:learnio/app_screens/sign_up/signup.dart';
 
 import '../../reusable_widgets/custom_elevated_button.dart';
 import '../../utils/app_assets.dart';

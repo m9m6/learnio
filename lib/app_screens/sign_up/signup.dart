@@ -1,18 +1,70 @@
+import 'dart:developer';
+import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import '../../reusable_widgets/custom_auth_textformfield.dart';
+import '../../reusable_widgets/custom_button.dart';
 import '../../utils/app_assets.dart';
 import '../login/login.dart';
 
-class SignUpScreen extends StatelessWidget {
+class SignUpScreen extends StatefulWidget {
   static const String routeName = '/SignUp';
   const SignUpScreen({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    final nameController = TextEditingController();
-    final emailController = TextEditingController();
-    final passwordController = TextEditingController();
+  State<SignUpScreen> createState() => _SignUpScreenState();
+}
 
+class _SignUpScreenState extends State<SignUpScreen> {
+  final Dio dio = Dio();
+  final _formKey = GlobalKey<FormState>();
+
+  final emailController = TextEditingController();
+  final passwordController = TextEditingController();
+  final confirmPasswordController = TextEditingController();
+  final firstNameController = TextEditingController();
+  final lastNameController = TextEditingController();
+
+  Future<void> signUp() async {
+    try {
+      final Response response = await dio.post(
+        'https://accessories-eshop.runasp.net/api/auth/register',
+        data: {
+          "email": emailController.text,
+          "password": passwordController.text,
+          "firstName": firstNameController.text,
+          "lastName": lastNameController.text,
+        },
+      );
+      log('res is $response');
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text("Account created successfully!"),
+          backgroundColor: Colors.green,
+        ),
+      );
+    } on DioException catch (e) {
+      log('dio error is ${e.response?.data ?? e.message}');
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(
+            "Sign-up failed: ${e.response?.data['message'] ?? 'Something went wrong.'}",
+          ),
+          backgroundColor: Colors.redAccent,
+        ),
+      );
+    } catch (e) {
+      log('dio exception $e');
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text("Unexpected error occurred."),
+          backgroundColor: Colors.redAccent,
+        ),
+      );
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
@@ -24,61 +76,78 @@ class SignUpScreen extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(24),
-        child: Column(
-          children: [
-            Image.asset(AppAssets.signUp, height: 200),
-            const SizedBox(height: 40),
-            AuthTextFormField(label: 'Full Name', controller: nameController),
-            AuthTextFormField(label: 'Email', controller: emailController),
-            AuthTextFormField(
-              label: 'Password',
-              controller: passwordController,
-              isPassword: true,
-            ),
-            const SizedBox(height: 10),
-            ElevatedButton(
-              onPressed: () {},
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.black,
-                foregroundColor: Colors.white,
-                minimumSize: const Size(double.infinity, 50),
+        child: Form(
+          key: _formKey,
+          child: Column(
+            children: [
+              Image.asset(AppAssets.signUp, height: 200),
+              const SizedBox(height: 40),
+              CustomTextFormField(
+                hintText: 'Email',
+                controller: emailController,
               ),
-              child: const Text('Sign Up'),
-            ),
-            const SizedBox(height: 16),
-            OutlinedButton.icon(
-              onPressed: () {},
-              icon: Image.network(
-                'https://upload.wikimedia.org/wikipedia/commons/4/4e/Google_%22G%22_Logo.svg',
-                height: 24,
+              CustomTextFormField(
+                hintText: 'Password',
+                isPassword: true,
+                controller: passwordController,
               ),
-              label: const Text('Sign up with Google'),
-              style: OutlinedButton.styleFrom(
-                minimumSize: const Size(double.infinity, 50),
+              CustomTextFormField(
+                hintText: 'First Name',
+                controller: firstNameController,
               ),
-            ),
-            const SizedBox(height: 24),
-            GestureDetector(
-              onTap: () {
-                Navigator.pushNamed(context, LoginScreen.routeName);
-              },
-              child: const Text.rich(
-                TextSpan(
-                  text: "Already have an account? ",
-                  style: TextStyle(color: Colors.black87),
-                  children: [
-                    TextSpan(
-                      text: 'Login',
-                      style: TextStyle(
-                        color: Colors.blue,
-                        fontWeight: FontWeight.w600,
-                      ),
-                    ),
-                  ],
+              CustomTextFormField(
+                hintText: 'Last Name',
+                controller: lastNameController,
+              ),
+              const SizedBox(height: 31),
+              CustomButton(
+                onPressed: () async {
+                  if (_formKey.currentState!.validate()) {
+                    await signUp();
+                    Navigator.pushNamed(context, LoginScreen.routeName);
+                  }
+                },
+                BgColor: const Color(0xff1F41BB),
+                fontColor: Colors.white70,
+                width: 357,
+                height: 60,
+                text: 'Sign Up',
+              ),
+              const SizedBox(height: 16),
+              OutlinedButton.icon(
+                onPressed: () {},
+                icon: Image.network(
+                  'https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-google-icon-logo-png-transparent-svg-vector-bie-supply-14.png',
+                  height: 24,
+                ),
+                label: const Text('Sign up with Google'),
+                style: OutlinedButton.styleFrom(
+                  minimumSize: const Size(double.infinity, 50),
                 ),
               ),
-            ),
-          ],
+              const SizedBox(height: 24),
+              GestureDetector(
+                onTap: () {
+                  Navigator.pushNamed(context, LoginScreen.routeName);
+                },
+                child: const Text.rich(
+                  TextSpan(
+                    text: "Already have an account? ",
+                    style: TextStyle(color: Colors.black87),
+                    children: [
+                      TextSpan(
+                        text: 'Login',
+                        style: TextStyle(
+                          color: Colors.blue,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );

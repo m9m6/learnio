@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:learnio/app_screens/home_screen.dart';
 import 'package:learnio/app_screens/login/login.dart';
-
 import 'app_screens/onboarding_Screens/onboarding_screen.dart';
 import 'app_screens/sign_up/signup.dart';
 import 'app_screens/splash/splash_screen.dart';
@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
         OnboardingScreen.routeName: (context) => OnboardingScreen(),
         LoginScreen.routeName: (context) => LoginScreen(),
         SignUpScreen.routeName: (context) => SignUpScreen(),
-
+        HomeScreen.routeName: (context) => HomeScreen(),
       },
     );
   }

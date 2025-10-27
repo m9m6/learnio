@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "title": "Programming",
+    "image": "https://www.thecoderpedia.com/wp-content/uploads/2020/06/How-to-learn-Programming.jpg"
+  },
+  {
+    "id": 2,
+    "title": "UI/UX Design",
+    "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/4ea5d0234400015.68c291b591def.png"
+  },
+  {
+    "id": 3,
+    "title": "Artificial Intelligence",
+    "image": "https://1.bp.blogspot.com/-1jq9R-na21U/Xwhip410sFI/AAAAAAAAAAY/fLO-FzWFlU8eKiCA5-IWAR22YoC1mM8-QCLcBGAsYHQ/s2048/real-ai.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Data Science",
+    "image": "https://www.unifiedinfotech.net/wp-content/uploads/2025/01/Boosting-Customer-Experience-with-a-Strategic-Website-Redesign-1024x495.png"
+  }
+]

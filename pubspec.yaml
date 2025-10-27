@@ -13,6 +13,11 @@ dependencies:
 
   cupertino_icons: ^1.0.8
   google_fonts: ^6.3.2
+  syncfusion_flutter_sliders: ^31.1.22
+  dio: ^5.9.0
+  convex_bottom_bar: ^3.2.0
+  flutter_bloc: ^9.1.1
+  bloc: ^9.1.0
 
 dev_dependencies:
   flutter_test:
@@ -25,3 +30,5 @@ flutter:
 
   assets:
     - assets/images/
+    - assets/categories.json
+    - assets/courses.json
