@@ -1,0 +1,74 @@
+{
+  "courseDetails": {
+    "id": 3,
+    "title": "Artificial Intelligence Foundations",
+    "shortDescription": "Dive into AI basics, algorithms, and ML concepts.",
+    "level": "Intermediate",
+    "duration": "8 weeks",
+    "thumbnail": "https://cdn.analyticsvidhya.com/wp-content/uploads/2021/05/Artificial-Intelligence-AI.jpg",
+    "tags": ["AI", "Machine Learning", "Python"],
+    "publishedDate": "2024-08-22",
+    "price": 59,
+    "hasDetails": true,
+    "fullDescription": "This course introduces the core principles of Artificial Intelligence including supervised and unsupervised learning, neural networks, and AI applications in modern industries.",
+    "syllabus": [
+      {
+        "week": 1,
+        "title": "Introduction to AI",
+        "topics": ["What is AI?", "History of AI", "Applications in real life"]
+      },
+      {
+        "week": 2,
+        "title": "Machine Learning Basics",
+        "topics": ["Supervised Learning", "Unsupervised Learning", "Data Preprocessing"]
+      },
+      {
+        "week": 3,
+        "title": "Neural Networks",
+        "topics": ["Perceptron", "Backpropagation", "Deep Learning"]
+      },
+      {
+        "week": 4,
+        "title": "AI Ethics and Future",
+        "topics": ["Bias in AI", "AI Ethics", "Future of Artificial Intelligence"]
+      }
+    ],
+    "requirements": [
+      "Basic Python knowledge",
+      "Understanding of linear algebra",
+      "Motivation to learn AI"
+    ],
+    "instructor": {
+      "name": "Dr. Sara Mahmoud",
+      "bio": "AI researcher with 10+ years of experience in machine learning and data-driven systems.",
+      "email": "sara.mah@aiacademy.org"
+    },
+    "resources": [
+      {
+        "type": "PDF",
+        "title": "AI Course Notes",
+        "url": "https://example.com/resources/ai_notes.pdf"
+      },
+      {
+        "type": "Video",
+        "title": "Neural Network Demo",
+        "url": "https://youtube.com/watch?v=example"
+      }
+    ],
+    "enrollmentUrl": "https://example.com/enroll/ai-foundations",
+    "reviews": [
+      {
+        "user": "Omar Khaled",
+        "rating": 5,
+        "comment": "Very informative and well-structured!",
+        "date": "2024-09-10"
+      },
+      {
+        "user": "Mona Adel",
+        "rating": 4,
+        "comment": "Loved the real-world examples.",
+        "date": "2024-09-12"
+      }
+    ]
+  }
+}

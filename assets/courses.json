@@ -1,23 +1,220 @@
-[
-  {
-    "id": 1,
-    "title": "Flutter for Beginners",
-    "author": "John Smith",
-    "progress": 0.45,
-    "image": "https://dac.digital/wp-content/uploads/2023/05/what_is_flutter-optimized.jpeg"
-  },
-  {
-    "id": 2,
-    "title": "Advanced Machine Learning",
-    "author": "Sara Lee",
-    "progress": 0.7,
-    "image": "https://th.bing.com/th/id/R.5406c95f86d7754a960764ba019382bc?rik=VuCYsf73syk0nw&pid=ImgRaw&r=0"
-  },
-  {
-    "id": 3,
-    "title": "UI Design Masterclass",
-    "author": "Tom Clark",
-    "progress": 0.3,
-    "image": "https://th.bing.com/th/id/R.5406c95f86d7754a960764ba019382bc?rik=VuCYsf73syk0nw&pid=ImgRaw&r=0"
-  }
-]
+{
+  "courses": [
+    {
+      "id": 1,
+      "title": "Flutter Development Bootcamp",
+      "shortDescription": "Master Flutter and build beautiful mobile apps.",
+      "fullDescription": "A comprehensive bootcamp that takes you from zero to building production-ready Flutter mobile applications. You will learn Dart, state management, UI design, animations, networking, testing, and deployment.",
+      "level": "Beginner",
+      "duration": "6 weeks",
+      "thumbnail": "https://storage.googleapis.com/cms-storage-bucket/70760bf1e88b184bb1bc.png",
+      "tags": ["Flutter", "Mobile", "Dart"],
+      "publishedDate": "2024-10-10",
+      "price": 0,
+      "hasDetails": true,
+      "syllabus": [
+        {"week": 1, "title": "Dart Basics & Flutter Setup", "topics": ["Dart syntax", "Null safety", "Widgets", "Project setup"]},
+        {"week": 2, "title": "Layouts & Navigation", "topics": ["Layouts", "Routing", "Stateful widgets"]},
+        {"week": 3, "title": "State Management", "topics": ["setState", "Provider", "Bloc basics"]},
+        {"week": 4, "title": "Networking & Persistence", "topics": ["HTTP", "Dio", "Shared Preferences", "SQLite"]},
+        {"week": 5, "title": "Animations & Design", "topics": ["Implicit animations", "Explicit animations", "Material Design"]},
+        {"week": 6, "title": "Testing & Deployment", "topics": ["Unit tests", "Widget tests", "Publishing to stores"]}
+      ],
+      "requirements": ["Basic programming knowledge", "A computer with Flutter installed", "Willingness to practice regularly"],
+      "instructor": {"name": "Alex Johnson", "bio": "Senior Flutter developer with 6 years experience building mobile apps."},
+      "reviews": [
+        {"user": "Maya", "rating": 5, "comment": "Excellent course, very practical."},
+        {"user": "Omar", "rating": 4, "comment": "Good explanations and projects."}
+      ]
+    },
+    {
+      "id": 2,
+      "title": "UI/UX Design Principles",
+      "shortDescription": "Learn modern UI/UX and Figma tools.",
+      "fullDescription": "Understand how to design intuitive and visually appealing interfaces using Figma. Learn user research, wireframing, prototyping, and usability testing techniques to create impactful digital experiences.",
+      "level": "Beginner",
+      "duration": "4 weeks",
+      "thumbnail": "https://tse3.mm.bing.net/th/id/OIP.7hoakxrs-A0lbLmf6ZqtawHaEK?rs=1&pid=ImgDetMain&o=7&rm=3",
+      "tags": ["Design", "Figma", "Prototyping"],
+      "publishedDate": "2024-09-15",
+      "price": 39,
+      "hasDetails": true,
+      "syllabus": [
+        {"week": 1, "title": "Introduction to UI/UX", "topics": ["User research", "Personas", "Design thinking"]},
+        {"week": 2, "title": "Wireframes & Prototypes", "topics": ["Figma basics", "Wireframing", "Clickable prototypes"]},
+        {"week": 3, "title": "Visual Design", "topics": ["Color theory", "Typography", "Layout grids"]},
+        {"week": 4, "title": "Testing & Handoff", "topics": ["Usability testing", "Developer handoff", "Feedback iteration"]}
+      ],
+      "requirements": ["No prior experience required", "Access to Figma", "Creativity and attention to detail"],
+      "instructor": {"name": "Emily Davis", "bio": "UI/UX designer with 8 years of experience working on web and mobile interfaces."},
+      "reviews": [
+        {"user": "Hana", "rating": 5, "comment": "Very clear explanations with real-world examples."},
+        {"user": "Adel", "rating": 4, "comment": "Loved the Figma exercises."}
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Artificial Intelligence Foundations",
+      "shortDescription": "Dive into AI concepts.",
+      "fullDescription": "Learn the essential concepts in AI and machine learning including supervised and unsupervised learning, neural networks, and model evaluation. This course includes Python notebooks and practical exercises.",
+      "level": "Intermediate",
+      "duration": "8 weeks",
+      "thumbnail": "https://tse3.mm.bing.net/th/id/OIP.1VRF7IF-AfwDI10VpN04RQHaEO?rs=1&pid=ImgDetMain&o=7&rm=3",
+      "tags": ["AI", "Machine Learning", "Python"],
+      "publishedDate": "2024-08-22",
+      "price": 59,
+      "hasDetails": true,
+      "syllabus": [
+        {"week": 1, "title": "Math for ML", "topics": ["Linear algebra", "Probability", "Statistics"]},
+        {"week": 2, "title": "Supervised Learning", "topics": ["Regression", "Classification"]},
+        {"week": 3, "title": "Unsupervised Learning", "topics": ["Clustering", "Dimensionality reduction"]},
+        {"week": 4, "title": "Neural Networks", "topics": ["Perceptrons", "Backpropagation"]},
+        {"week": 5, "title": "Deep Learning Basics", "topics": ["CNNs", "RNNs"]},
+        {"week": 6, "title": "Model Evaluation", "topics": ["Cross validation", "Metrics"]},
+        {"week": 7, "title": "Practical Notebooks", "topics": ["Keras", "Scikit-learn"]},
+        {"week": 8, "title": "Final Project", "topics": ["End-to-end model building"]}
+      ],
+      "requirements": ["Comfortable with Python", "Basic statistics knowledge"],
+      "instructor": {"name": "Dr. Priya Rao", "bio": "Researcher in applied machine learning and educator."},
+      "reviews": [
+        {"user": "Liam", "rating": 5, "comment": "Great intro to AI."},
+        {"user": "Sara", "rating": 4, "comment": "Helpful notebooks and exercises."}
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Data Science with Python",
+      "shortDescription": "Explore data analysis using Python.",
+      "fullDescription": "This hands-on course introduces data cleaning, visualization, and statistical analysis using Python libraries such as Pandas, NumPy, and Matplotlib. Ideal for anyone who wants to understand real-world data workflows.",
+      "level": "Intermediate",
+      "duration": "6 weeks",
+      "thumbnail": "https://www.datacamp.com/datacamp.png",
+      "tags": ["Python", "Data", "Pandas"],
+      "publishedDate": "2024-06-05",
+      "price": 49,
+      "hasDetails": true,
+      "syllabus": [
+        {"week": 1, "title": "Data Manipulation", "topics": ["Pandas basics", "DataFrames", "Cleaning data"]},
+        {"week": 2, "title": "Visualization", "topics": ["Matplotlib", "Seaborn", "Histograms and plots"]},
+        {"week": 3, "title": "Exploratory Analysis", "topics": ["Descriptive statistics", "Correlation analysis"]},
+        {"week": 4, "title": "Machine Learning Intro", "topics": ["Linear regression", "Model training"]},
+        {"week": 5, "title": "Project Work", "topics": ["Data insights project", "Visualization storytelling"]},
+        {"week": 6, "title": "Presentation", "topics": ["Sharing findings", "Dashboard basics"]}
+      ],
+      "requirements": ["Basic Python knowledge", "Interest in data analysis"],
+      "instructor": {"name": "John Lee", "bio": "Data scientist specializing in data visualization and Python automation."},
+      "reviews": [
+        {"user": "Rania", "rating": 5, "comment": "Loved the practical exercises!"},
+        {"user": "Youssef", "rating": 4, "comment": "Good intro for beginners."}
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Web Development Fundamentals",
+      "shortDescription": "HTML, CSS, and JavaScript from scratch.",
+      "fullDescription": "A beginner-friendly course covering HTML, CSS, and JavaScript to build responsive websites. You’ll learn structure, styling, interactivity, and web hosting.",
+      "level": "Beginner",
+      "duration": "5 weeks",
+      "thumbnail": "https://w3-lab.com/wp-content/uploads/2019/12/Get-the-Most-Fancied-Web-Development-Services-min-scaled.jpg",
+      "tags": ["HTML", "CSS", "JS"],
+      "publishedDate": "2024-07-01",
+      "price": 0,
+      "hasDetails": true,
+      "syllabus": [
+        {"week": 1, "title": "HTML Basics", "topics": ["Elements", "Tags", "Forms"]},
+        {"week": 2, "title": "CSS Fundamentals", "topics": ["Selectors", "Box model", "Flexbox"]},
+        {"week": 3, "title": "JavaScript Essentials", "topics": ["Variables", "Functions", "Events"]},
+        {"week": 4, "title": "DOM Manipulation", "topics": ["Selectors", "Dynamic content"]},
+        {"week": 5, "title": "Final Website Project", "topics": ["Responsive design", "Publishing online"]}
+      ],
+      "requirements": ["No experience needed", "Laptop or PC", "Internet connection"],
+      "instructor": {"name": "Sarah Kim", "bio": "Front-end developer and coding instructor with 5 years of experience."},
+      "reviews": [
+        {"user": "Ola", "rating": 5, "comment": "Best HTML/CSS intro ever!"},
+        {"user": "Khaled", "rating": 4, "comment": "Very hands-on and fun."}
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Advanced React",
+      "shortDescription": "Hooks, Context, and performance optimization.",
+      "fullDescription": "Go deep into React architecture including Hooks, Context API, and advanced performance optimization techniques. You’ll also explore React Router, testing, and scalable project structure.",
+      "level": "Advanced",
+      "duration": "7 weeks",
+      "thumbnail": "https://tse1.mm.bing.net/th/id/OIP.33CwBYkmnMfpA9Djup22JwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3",
+      "tags": ["React", "Web", "JSX"],
+      "publishedDate": "2024-10-11",
+      "price": 69,
+      "hasDetails": true,
+      "syllabus": [
+        {"week": 1, "title": "React Review", "topics": ["JSX", "Props", "State"]},
+        {"week": 2, "title": "Hooks Deep Dive", "topics": ["useEffect", "useReducer", "Custom hooks"]},
+        {"week": 3, "title": "Context API", "topics": ["Global state", "Theme management"]},
+        {"week": 4, "title": "Routing", "topics": ["React Router v6", "Nested routes"]},
+        {"week": 5, "title": "Performance", "topics": ["Memoization", "Code splitting"]},
+        {"week": 6, "title": "Testing", "topics": ["Jest", "React Testing Library"]},
+        {"week": 7, "title": "Final App Project", "topics": ["Build a scalable app"]}
+      ],
+      "requirements": ["Strong JavaScript knowledge", "Basic React familiarity"],
+      "instructor": {"name": "Tom Harris", "bio": "Full-stack developer with a focus on React and Node.js."},
+      "reviews": [
+        {"user": "Dina", "rating": 5, "comment": "Loved the structure and advanced topics."},
+        {"user": "Ziad", "rating": 4, "comment": "Perfect for upgrading React skills."}
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Database Design",
+      "shortDescription": "Learn relational models and SQL best practices.",
+      "fullDescription": "Understand relational database design, normalization, and SQL optimization. Learn to design scalable schemas and manage real-world data efficiently.",
+      "level": "Intermediate",
+      "duration": "6 weeks",
+      "thumbnail": "https://cdn-icons-png.flaticon.com/512/4248/4248443.png",
+      "tags": ["SQL", "MySQL", "PostgreSQL"],
+      "publishedDate": "2024-05-12",
+      "price": 35,
+      "hasDetails": true,
+      "syllabus": [
+        {"week": 1, "title": "Intro to Databases", "topics": ["Tables", "Keys", "Relationships"]},
+        {"week": 2, "title": "Normalization", "topics": ["1NF", "2NF", "3NF"]},
+        {"week": 3, "title": "SQL Basics", "topics": ["SELECT", "INSERT", "UPDATE", "DELETE"]},
+        {"week": 4, "title": "Advanced Queries", "topics": ["Joins", "Indexes", "Views"]},
+        {"week": 5, "title": "Optimization", "topics": ["Query tuning", "Performance"]},
+        {"week": 6, "title": "Project", "topics": ["Designing a full DB schema"]}
+      ],
+      "requirements": ["Basic understanding of data", "Any SQL client tool"],
+      "instructor": {"name": "Ahmed Nasser", "bio": "Database architect with over 10 years of SQL experience."},
+      "reviews": [
+        {"user": "Nada", "rating": 5, "comment": "Super clear and practical."},
+        {"user": "Karim", "rating": 4, "comment": "Good explanation of normalization."}
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Cybersecurity Essentials",
+      "shortDescription": "Understand vulnerabilities and protect systems.",
+      "fullDescription": "Gain foundational knowledge of cybersecurity, including threat analysis, penetration testing, and system hardening. Learn how to identify risks and protect data across various platforms.",
+      "level": "Advanced",
+      "duration": "6 weeks",
+      "thumbnail": "https://semprivacy.com/wp-content/uploads/2023/10/Cybersecurity.jpg",
+      "tags": ["Security", "Networking", "Linux"],
+      "publishedDate": "2024-03-20",
+      "price": 99,
+      "hasDetails": true,
+      "syllabus": [
+        {"week": 1, "title": "Cybersecurity Basics", "topics": ["Threats", "Vulnerabilities", "Risk management"]},
+        {"week": 2, "title": "System Security", "topics": ["Firewalls", "Antivirus", "Hardening systems"]},
+        {"week": 3, "title": "Networking Security", "topics": ["VPNs", "Encryption", "Protocols"]},
+        {"week": 4, "title": "Penetration Testing", "topics": ["Ethical hacking", "Tools", "Reporting"]},
+        {"week": 5, "title": "Incident Response", "topics": ["Detection", "Containment", "Recovery"]},
+        {"week": 6, "title": "Final Security Project", "topics": ["Simulated attack defense"]}
+      ],
+      "requirements": ["Basic IT knowledge", "Interest in cybersecurity", "Computer with internet"],
+      "instructor": {"name": "Laura Chen", "bio": "Cybersecurity engineer specialized in network defense and ethical hacking."},
+      "reviews": [
+        {"user": "Samir", "rating": 5, "comment": "Very informative and practical."},
+        {"user": "Reem", "rating": 4, "comment": "Loved the real attack simulations."}
+      ]
+    }
+  ]
+}
