@@ -92,43 +92,43 @@ The following gallery shows UI screenshots (thumbnails link to full-size images)
   <tr>
     <td style="text-align:center">
       <a href="assets/images/Screenshot_٢٠٢٥١١٠٣-٢٠٢٧٥١_Gallery.png"><img src="assets/images/Screenshot_٢٠٢٥١١٠٣-٢٠٢٧٥١_Gallery.png" alt="Home - 20251103-202751"/></a>
-      <div style="font-size:0.9em; margin-top:6px">Home / Dashboard</div>
+      <div style="font-size:0.9em; margin-top:6px"></div>
     </td>
     <td style="text-align:center">
       <a href="assets/images/Screenshot_٢٠٢٥١١٠٣-٢٠٢٧٥٤_Gallery.png"><img src="assets/images/Screenshot_٢٠٢٥١١٠٣-٢٠٢٧٥٤_Gallery.png" alt="Home alt - 20251103-202754"/></a>
-      <div style="font-size:0.9em; margin-top:6px">Home (alternate)</div>
+      <div style="font-size:0.9em; margin-top:6px"></div>
     </td>
     <td style="text-align:center">
       <a href="assets/images/Screenshot_٢٠٢٥١١٠٣-٢٠٢٨٢٨_Gallery.png"><img src="assets/images/Screenshot_٢٠٢٥١١٠٣-٢٠٢٨٢٨_Gallery.png" alt="Courses - 20251103-202828"/></a>
-      <div style="font-size:0.9em; margin-top:6px">Course list / Categories</div>
+      <div style="font-size:0.9em; margin-top:6px"></div>
     </td>
   </tr>
   <tr>
     <td style="text-align:center">
       <a href="assets/images/Screenshot_٢٠٢٥١١٠٣-٢٠٢٨٤٠_Gallery.png"><img src="assets/images/Screenshot_٢٠٢٥١١٠٣-٢٠٢٨٤٠_Gallery.png" alt="Course Detail - 20251103-202840"/></a>
-      <div style="font-size:0.9em; margin-top:6px">Course detail / Player</div>
+      <div style="font-size:0.9em; margin-top:6px"></div>
     </td>
     <td style="text-align:center">
       <a href="assets/images/Screenshot_٢٠٢٥١١٠٣-٢٠٢٨٤٥_Gallery.png"><img src="assets/images/Screenshot_٢٠٢٥١١٠٣-٢٠٢٨٤٥_Gallery.png" alt="Profile - 20251103-202845"/></a>
-      <div style="font-size:0.9em; margin-top:6px">Profile / Settings</div>
+      <div style="font-size:0.9em; margin-top:6px"></div>
     </td>
     <td style="text-align:center">
       <a href="assets/images/Screenshot_٢٠٢٥١١٠٣-٢٠٢٨٥٧_Gallery.png"><img src="assets/images/Screenshot_٢٠٢٥١١٠٣-٢٠٢٨٥٧_Gallery.png" alt="Gallery - 20251103-202857"/></a>
-      <div style="font-size:0.9em; margin-top:6px">Gallery / Onboarding</div>
+      <div style="font-size:0.9em; margin-top:6px"></div>
     </td>
   </tr>
   <tr>
     <td style="text-align:center">
       <a href="assets/images/Screenshot_٢٠٢٥١١٠٣-٢٠٢٩١١_Gallery.png"><img src="assets/images/Screenshot_٢٠٢٥١١٠٣-٢٠٢٩١١_Gallery.png" alt="Extra - 20251103-202911"/></a>
-      <div style="font-size:0.9em; margin-top:6px">Additional screen</div>
+      <div style="font-size:0.9em; margin-top:6px"></div>
     </td>
     <td style="text-align:center">
       <a href="assets/images/Screenshot_٢٠٢٥١١٠٣-٢٠٢٩٢٢_Gallery.png"><img src="assets/images/Screenshot_٢٠٢٥١١٠٣-٢٠٢٩٢٢_Gallery.png" alt="Login - 20251103-202922"/></a>
-      <div style="font-size:0.9em; margin-top:6px">Login screen</div>
+      <div style="font-size:0.9em; margin-top:6px"></div>
     </td>
     <td style="text-align:center">
       <a href="assets/images/Screenshot_٢٠٢٥١١٠٣-٢٠٢٩٣٣_Gallery.png"><img src="assets/images/Screenshot_٢٠٢٥١١٠٣-٢٠٢٩٣٣_Gallery.png" alt="Sign Up - 20251103-202933"/></a>
-      <div style="font-size:0.9em; margin-top:6px">Sign Up screen</div>
+      <div style="font-size:0.9em; margin-top:6px"></div>
     </td>
   </tr>
 </table>
@@ -137,59 +137,4 @@ The following gallery shows UI screenshots (thumbnails link to full-size images)
 
 ```bash
 flutter pub add video_player
-```
-
-```dart
-import 'package:flutter/material.dart';
-import 'package:video_player/video_player.dart';
-
-class LearnioDemoVideo extends StatefulWidget {
-  @override
-  _LearnioDemoVideoState createState() => _LearnioDemoVideoState();
-}
-
-class _LearnioDemoVideoState extends State<LearnioDemoVideo> {
-  late VideoPlayerController _controller;
-
-  @override
-  void initState() {
-    super.initState();
-    _controller = VideoPlayerController.asset('assets/images/learnio_final_app.mp4')
-      ..initialize().then((_) {
-        setState(() {});
-      });
-  }
-
-  @override
-  void dispose() {
-    _controller.dispose();
-    super.dispose();
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    if (!_controller.value.isInitialized) return const SizedBox.shrink();
-    return Column(
-      children: [
-        AspectRatio(
-          aspectRatio: _controller.value.aspectRatio,
-          child: VideoPlayer(_controller),
-        ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            IconButton(
-              icon: Icon(
-                _controller.value.isPlaying ? Icons.pause : Icons.play_arrow,
-              ),
-              onPressed: () => setState(() {
-                _controller.value.isPlaying ? _controller.pause() : _controller.play();
-              }),
-            ),
-          ],
-        ),
-      ],
-    );
-  }
-}
 ```
