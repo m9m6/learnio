@@ -134,7 +134,3 @@ The following gallery shows UI screenshots (thumbnails link to full-size images)
 </table>
 
 ---
-
-```bash
-flutter pub add video_player
-```
