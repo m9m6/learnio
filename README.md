@@ -1,3 +1,19 @@
+Final Excelerate App — Completion Summary
+
+The Final Excelerate Flutter app (previously titled "Learnio") is complete and fully functional. It includes the required screens and features listed below and is wired to local JSON data and simple mock endpoints where appropriate.
+
+✅ Features delivered
+- Login screen — basic auth flow (mock/auth placeholder) and validation.
+- Home screen — shows learner info (name), recommended courses, and quick links to sections.
+- Learning (Programs) screen — a course list loaded from a JSON file. Each item displays title, short description, duration, and thumbnail.
+- Course Details screen — opens when the user taps a course; receives the course JSON and displays full details (full description, syllabus, instructor, resources, price, etc.).
+- Feedback form page — a form where learners can submit feedback; form validates inputs and either posts to a mock endpoint or saves locally.
+- Smooth navigation & consistent branding — unified colors, typography, and logo across all screens; transitions implemented with Navigator.push for clean navigation.
+- Working data integration — courses are loaded from local JSON (`assets/courses.json`) and passed to detail pages; form submissions are handled and persisted (or forwarded to a sample API URL).
+- App is functional (not only UI) — data displays correctly and forms can be submitted.
+
+---
+
 Learnio – Online Learning App
 
 Learnio is a Flutter-based mobile application designed for online learning and course progress management. It provides an interactive platform where learners can enroll in courses, study through structured modules, and track their academic progress. Administrators can create, edit, and manage courses, monitor performance, and deliver timely feedback — all within a unified environment.
@@ -114,48 +130,152 @@ The following gallery shows UI screenshots (thumbnails link to full-size images)
 
 <table>
   <tr>
-    <td align="center">
-      <a href="assets/images/Screenshot_20251027-204451.png"><img src="assets/images/Screenshot_20251027-204451.png" alt="Home - 204451" width="300"/></a>
+    <td style="text-align:center">
+      <a href="assets/images/Screenshot_٢٠٢٥١١٠٣-٢٠٢٧٥١_Gallery.png"><img src="assets/images/Screenshot_٢٠٢٥١١٠٣-٢٠٢٧٥١_Gallery.png" alt="Home - 20251103-202751"/></a>
       <div style="font-size:0.9em; margin-top:6px">Home / Dashboard</div>
     </td>
-    <td align="center">
-      <a href="assets/images/Screenshot_20251027-204501.png"><img src="assets/images/Screenshot_20251027-204501.png" alt="Home alt - 204501" width="300"/></a>
+    <td style="text-align:center">
+      <a href="assets/images/Screenshot_٢٠٢٥١١٠٣-٢٠٢٧٥٤_Gallery.png"><img src="assets/images/Screenshot_٢٠٢٥١١٠٣-٢٠٢٧٥٤_Gallery.png" alt="Home alt - 20251103-202754"/></a>
       <div style="font-size:0.9em; margin-top:6px">Home (alternate)</div>
     </td>
-    <td align="center">
-      <a href="assets/images/Screenshot_20251027-205822.png"><img src="assets/images/Screenshot_20251027-205822.png" alt="Courses - 205822" width="300"/></a>
+    <td style="text-align:center">
+      <a href="assets/images/Screenshot_٢٠٢٥١١٠٣-٢٠٢٨٢٨_Gallery.png"><img src="assets/images/Screenshot_٢٠٢٥١١٠٣-٢٠٢٨٢٨_Gallery.png" alt="Courses - 20251103-202828"/></a>
       <div style="font-size:0.9em; margin-top:6px">Course list / Categories</div>
     </td>
   </tr>
   <tr>
-    <td align="center">
-      <a href="assets/images/Screenshot_20251027-205825.png"><img src="assets/images/Screenshot_20251027-205825.png" alt="Course Detail - 205825" width="300"/></a>
+    <td style="text-align:center">
+      <a href="assets/images/Screenshot_٢٠٢٥١١٠٣-٢٠٢٨٤٠_Gallery.png"><img src="assets/images/Screenshot_٢٠٢٥١١٠٣-٢٠٢٨٤٠_Gallery.png" alt="Course Detail - 20251103-202840"/></a>
       <div style="font-size:0.9em; margin-top:6px">Course detail / Player</div>
     </td>
-    <td align="center">
-      <a href="assets/images/Screenshot_20251027-205832.png"><img src="assets/images/Screenshot_20251027-205832.png" alt="Profile - 205832" width="300"/></a>
+    <td style="text-align:center">
+      <a href="assets/images/Screenshot_٢٠٢٥١١٠٣-٢٠٢٨٤٥_Gallery.png"><img src="assets/images/Screenshot_٢٠٢٥١١٠٣-٢٠٢٨٤٥_Gallery.png" alt="Profile - 20251103-202845"/></a>
       <div style="font-size:0.9em; margin-top:6px">Profile / Settings</div>
     </td>
-    <td align="center">
-      <a href="assets/images/Screenshot_20251027-210101_Gallery.png"><img src="assets/images/Screenshot_20251027-210101_Gallery.png" alt="Gallery - 210101" width="300"/></a>
+    <td style="text-align:center">
+      <a href="assets/images/Screenshot_٢٠٢٥١١٠٣-٢٠٢٨٥٧_Gallery.png"><img src="assets/images/Screenshot_٢٠٢٥١١٠٣-٢٠٢٨٥٧_Gallery.png" alt="Gallery - 20251103-202857"/></a>
       <div style="font-size:0.9em; margin-top:6px">Gallery / Onboarding</div>
     </td>
   </tr>
   <tr>
-    <td align="center">
-      <a href="assets/images/Screenshot_20251027-212258.png"><img src="assets/images/Screenshot_20251027-212258.png" alt="Extra - 212258" width="300"/></a>
+    <td style="text-align:center">
+      <a href="assets/images/Screenshot_٢٠٢٥١١٠٣-٢٠٢٩١١_Gallery.png"><img src="assets/images/Screenshot_٢٠٢٥١١٠٣-٢٠٢٩١١_Gallery.png" alt="Extra - 20251103-202911"/></a>
       <div style="font-size:0.9em; margin-top:6px">Additional screen</div>
     </td>
-    <td align="center">
-      <a href="assets/images/login.png"><img src="assets/images/login.png" alt="Login" width="300"/></a>
+    <td style="text-align:center">
+      <a href="assets/images/Screenshot_٢٠٢٥١١٠٣-٢٠٢٩٢٢_Gallery.png"><img src="assets/images/Screenshot_٢٠٢٥١١٠٣-٢٠٢٩٢٢_Gallery.png" alt="Login - 20251103-202922"/></a>
       <div style="font-size:0.9em; margin-top:6px">Login screen</div>
     </td>
-    <td align="center">
-      <a href="assets/images/sign_up.png"><img src="assets/images/sign_up.png" alt="Sign Up" width="300"/></a>
+    <td style="text-align:center">
+      <a href="assets/images/Screenshot_٢٠٢٥١١٠٣-٢٠٢٩٣٣_Gallery.png"><img src="assets/images/Screenshot_٢٠٢٥١١٠٣-٢٠٢٩٣٣_Gallery.png" alt="Sign Up - 20251103-202933"/></a>
       <div style="font-size:0.9em; margin-top:6px">Sign Up screen</div>
     </td>
   </tr>
 </table>
+
+---
+
+Video demo and adding a video to the app
+
+Yes — you can add a demo video to both this README and to the Flutter app itself. Two recommended approaches:
+
+1) Host the demo on a video platform (recommended)
+- Upload the demo to YouTube (or another hosting provider) and paste the link in this README. On GitHub the README cannot truly embed a playable remote video, but you can link a thumbnail to the YouTube URL.
+
+Example (README):
+
+[Watch demo on YouTube](https://youtu.be/YOUR_VIDEO_ID)
+
+To create a clickable thumbnail in the README, use a screenshot image that links to the YouTube URL (replace YOUR_VIDEO_ID with the actual id):
+
+```markdown
+[![Watch the demo](assets/images/Screenshot_٢٠٢٥١١٠٣-٢٠٢٧٥١_Gallery.png)](https://youtu.be/YOUR_VIDEO_ID)
+```
+
+If you already have the video file in the repository
+
+You mentioned the demo video file is available at `assets/images/learnio_final_app.mp4`. Since `assets/images/` is already declared in `pubspec.yaml`, that file will be bundled with the app as-is.
+
+- Clickable thumbnail linking to the bundled MP4 (some renderers will download/open the file in the browser):
+
+```markdown
+[![Watch the demo](assets/images/Screenshot_٢٠٢٥١١٠٣-٢٠٢٧٥١_Gallery.png)](assets/images/learnio_final_app.mp4)
+```
+
+- Simple HTML5 video tag (note: GitHub's README rendering may not play repository-hosted MP4s inline; this works in many static site renderers or local previews):
+
+```html
+<video controls src="assets/images/learnio_final_app.mp4">Your browser does not support the video tag.</video>
+```
+
+Play the bundled video inside the Flutter app
+
+- Confirmed: `pubspec.yaml` already lists `assets/images/` under `flutter: assets:`, so you do not need to change it to bundle `assets/images/learnio_final_app.mp4`.
+
+- Add the `video_player` plugin and play the bundled video using `VideoPlayerController.asset` (example using your filename):
+
+```bash
+flutter pub add video_player
+```
+
+```dart
+import 'package:flutter/material.dart';
+import 'package:video_player/video_player.dart';
+
+class LearnioDemoVideo extends StatefulWidget {
+  @override
+  _LearnioDemoVideoState createState() => _LearnioDemoVideoState();
+}
+
+class _LearnioDemoVideoState extends State<LearnioDemoVideo> {
+  late VideoPlayerController _controller;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller = VideoPlayerController.asset('assets/images/learnio_final_app.mp4')
+      ..initialize().then((_) {
+        setState(() {});
+      });
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    if (!_controller.value.isInitialized) return const SizedBox.shrink();
+    return Column(
+      children: [
+        AspectRatio(
+          aspectRatio: _controller.value.aspectRatio,
+          child: VideoPlayer(_controller),
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            IconButton(
+              icon: Icon(
+                _controller.value.isPlaying ? Icons.pause : Icons.play_arrow,
+              ),
+              onPressed: () => setState(() {
+                _controller.value.isPlaying ? _controller.pause() : _controller.play();
+              }),
+            ),
+          ],
+        ),
+      ],
+    );
+  }
+}
+```
+
+Notes and recommendations
+- For best cross-platform README playback, upload the demo to YouTube and link the URL here.
+- Bundling the MP4 in the app increases the APK size; if the video is large consider hosting it remotely and using `VideoPlayerController.network`.
 
 ---
 
