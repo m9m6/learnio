@@ -1,6 +1,6 @@
 Learnio – Online Learning App
 
-Learnio is a Flutter-based mobile application designed for online learning and course progress management. It provides an interactive platform where learners can enroll in courses, study through structured modules, and track their academic progress. Administrators can create, edit, and manage courses, monitor performance, and deliver timely feedback — all within a unified environment.
+Learnio is a Flutter-based mobile application designed for online learning and course progress management.
 
 
 ✅ Features delivered
